@@ -12,11 +12,11 @@
 | `httpd`                 | Nombre de la imagen que se va a descargar desde el Docker Hub            |
 
 ### [2 Primer Dockerfile](2PrimerDockerFile) - Construyendo la Primera imágen
-#### Previo: Dentro de la carpeta, donde se va a guardar el Dockerfile, deben estar los archivos:
+#### Previo: Dentro de la carpeta, donde se va a guardar el Dockerfile, deben estar los archivos (propias del Front):
 - [x] index.html
 - [x] prepros-6.config
 - [x] prepros.config
-#### Y las carpetas:
+#### Y las carpetas (propias del Front):
 - [x] assets
 - [x] vendor
 #### Contenido del Dockerfile:
