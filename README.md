@@ -38,4 +38,26 @@ COPY index.html /usr/local/apache2/htdocs/
 ***
 ### 3 Creando Repo en DockerHub y subir imagen
 #### Entrar al DockerHub y crear un nuevo repositorio:
+![image](https://github.com/user-attachments/assets/6dc33aa8-9f5d-4a87-a89b-699facb6275c)
+Seleccionamos el namespace, le ponemos un nombre y lo creamos:
+![image](https://github.com/user-attachments/assets/17f2707c-2c82-41c6-af35-fb45d2cdc6b0)
+Ahora en local, donde tenemos la paguina web, vamos a crear una imagen con el user de dockerhub (latincrack/nubytek_latinweb:):
+
+    $ docker build -t latincrack/nubytek_latinweb:ver1 .
+Listamos las imagenes creadas:
+![image](https://github.com/user-attachments/assets/ad867ee1-db0b-4a18-bfc4-c1f7f6ffa54b)
+
+Ahora enviamos la imagen (PUSH) construida al Docker Hub (previa autentificacipon):
+
+    $ docker push latincrack/nubytek_latinweb:ver1
+![image](https://github.com/user-attachments/assets/f0585c4d-ffce-41e2-bd42-52c0d3ec3ff0)
+
+Y luego en el Docker Hub podemos ver que ya se subio la imagen:
+![image](https://github.com/user-attachments/assets/13481226-8261-44e1-8cbc-93fe6457bdc3)
+
+
+
+
+
+
 
