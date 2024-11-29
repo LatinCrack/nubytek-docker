@@ -36,4 +36,6 @@ COPY index.html /usr/local/apache2/htdocs/
 #### Ejecutar contenedor desde la imagen previamente creada (miweb:ver1):
 `docker run --name weblatin -d -p 80:80 miweb:ver1`
 
+### 3 Creando Repo en DockerHub y subir imagen
+#### Entrar al DockerHub y crear un nuevo repositorio:
 
