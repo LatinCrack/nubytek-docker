@@ -45,6 +45,7 @@ Ahora en local, donde tenemos la paguina web, vamos a crear una imagen con el us
 
     $ docker build -t latincrack/nubytek_latinweb:ver1 .
 Listamos las imagenes creadas:
+
 ![image](https://github.com/user-attachments/assets/ad867ee1-db0b-4a18-bfc4-c1f7f6ffa54b)
 
 Ahora enviamos la imagen (PUSH) construida al Docker Hub (previa autentificacipon):
@@ -53,7 +54,13 @@ Ahora enviamos la imagen (PUSH) construida al Docker Hub (previa autentificacipo
 ![image](https://github.com/user-attachments/assets/f0585c4d-ffce-41e2-bd42-52c0d3ec3ff0)
 
 Y luego en el Docker Hub podemos ver que ya se subio la imagen:
+
 ![image](https://github.com/user-attachments/assets/13481226-8261-44e1-8cbc-93fe6457bdc3)
+
+***
+### 4 Construyendo un contenedor en base al repo del dockerhub:
+    $ docker run --name weblatin -p 80:80 -d latincrack/nubytek_latinweb:ver1
+![image](https://github.com/user-attachments/assets/cd3257dd-76d0-46af-9646-f137ba292c63)
 
 
 
