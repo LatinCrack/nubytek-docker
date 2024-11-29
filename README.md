@@ -10,7 +10,7 @@
 | `-d`                    | detached mode, Ejecuta el contenedor en segundo plano                    |
 | `-p 82:80`              | Especifica el puerto, siendo 82 el puerto del host y 80 el del contenedor|
 | `httpd`                 | Nombre de la imagen que se va a descargar desde el Docker Hub            |
-
+***
 ### [2 Primer Dockerfile](2PrimerDockerFile) - Construyendo la Primera imágen
 #### Previo: Dentro de la carpeta, donde se va a guardar el Dockerfile, deben estar los archivos (propias del Front):
 - [x] index.html
@@ -35,7 +35,7 @@ COPY index.html /usr/local/apache2/htdocs/
 `docker build -t miweb:ver1 .`
 #### Ejecutar contenedor desde la imagen previamente creada (miweb:ver1):
 `docker run --name weblatin -d -p 80:80 miweb:ver1`
-
+***
 ### 3 Creando Repo en DockerHub y subir imagen
 #### Entrar al DockerHub y crear un nuevo repositorio:
 
