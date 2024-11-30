@@ -80,7 +80,9 @@ COPY index.html /usr/local/apache2/htdocs/index.html/
 
 
 ***
-
+### 6 Redes en Docker:
+#### Docker usa los siguientes drivers de redes:
+![image](https://github.com/user-attachments/assets/234606c6-7773-4093-a916-67446ec9a4dd)
 
 
 
