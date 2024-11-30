@@ -84,7 +84,24 @@ COPY index.html /usr/local/apache2/htdocs/index.html/
 #### Docker usa los siguientes drivers de redes:
 ![image](https://github.com/user-attachments/assets/234606c6-7773-4093-a916-67446ec9a4dd)
 
+#### BRIDGE: Modo predeterminado, sino especificamos el parametro --network al ejecutar el contenedor, tomara este driver.
+Este modo crea una interfaz de red virtual (su propia red), asignandole IP interna a cada contenedor.
 
+Creamos un contenedor apache:
+
+`docker run --name latinapache -p 85:80 -d httpd`
+
+Y vemos los detalles de la red con:
+
+`docker inspect latinapache`
+
+![image](https://github.com/user-attachments/assets/e9b937be-dfdc-4598-961e-00c71c4bd861)
+
+#### HOST: No crea una red aparte y usa directamente la IP del host.
+
+`docker run --name latinapache -d --network host httpd`
+
+![image](https://github.com/user-attachments/assets/a6b8ec8a-47a5-4fd5-94de-2ea7f8b9a264)
 
 
 
