@@ -61,7 +61,8 @@ Y luego en el Docker Hub podemos ver que ya se subio la imagen:
 ### 4 Construyendo un contenedor en base al repo del dockerhub:
     $ docker run --name weblatin -p 80:80 -d latincrack/nubytek_latinweb:ver1
 ![image](https://github.com/user-attachments/assets/cd3257dd-76d0-46af-9646-f137ba292c63)
-![image](https://github.com/user-attachments/assets/7019e90c-b867-4750-bc15-b74b22c5d6fb)
+![image](https://github.com/user-attachments/assets/6354ab32-5075-43a5-92c6-9e070180471c)
+
 
 ***
 ### 5 Sobreescribiendo la imagen del dockerhub (tener el index.html ya modificado):
@@ -75,7 +76,8 @@ COPY index.html /usr/local/apache2/htdocs/index.html/
 
 #### Comando para crear el contenedor con la nueva imagen:
 `docker run --name otraweb -d -p 81:80 sobreescrito`
-![image](https://github.com/user-attachments/assets/a9c86a72-5872-4f92-8fe2-b353012262b8)
+![image](https://github.com/user-attachments/assets/4a03a063-83b8-4dd1-b927-3a7765b77204)
+
 
 ***
 
