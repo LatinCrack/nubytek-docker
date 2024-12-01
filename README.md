@@ -103,5 +103,21 @@ Y vemos los detalles de la red con:
 
 ![image](https://github.com/user-attachments/assets/a6b8ec8a-47a5-4fd5-94de-2ea7f8b9a264)
 
+#### NONE: Crea un contenedor completamente aislado.
+Ideal para contenedores que solo procesen datos, generar informes, o cualquier otro escenario donde no necesite comunicación ni conectividad de red.
+
+`docker run --name latinapache -d --network none httpd`
+
+![image](https://github.com/user-attachments/assets/51b397e0-c78a-4d45-b77c-eeb02ba90e64)
+
+*** host.docker.internal : es un nombre especial que resuelve a la dirección IP de la máquina host desde dentro de un contenedor Docker.
+NOTA.- Esto es una caracteristica de Docker Desktop. En servidores Linux no está esta caracteristica.
+
+***
+
+
+
+
+
 
 
