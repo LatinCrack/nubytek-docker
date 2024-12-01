@@ -129,5 +129,12 @@ NOTA.- Esto es una caracteristica de Docker Desktop. En servidores Linux no est√
 ### 7 Almacenamiento en Docker:
 ![image](https://github.com/user-attachments/assets/25bb2b01-b853-4c26-b5b9-f764145ab0f3)
 
+#### VOLUMENES:
+![image](https://github.com/user-attachments/assets/3bda6e13-35ae-436e-ae10-2988ce9cc130)
+
+#### BIND MOUNT:
+![image](https://github.com/user-attachments/assets/d6bc96c3-3191-4c6b-9ffc-e529a362fd1a)
+
+
 
 
