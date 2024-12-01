@@ -126,6 +126,8 @@ NOTA.- Esto es una caracteristica de Docker Desktop. En servidores Linux no est√
 `docker cp my_container:/var/log/myapp.log /home/logs/`
 
 ***
+### 7 Almacenamiento en Docker:
+![image](https://github.com/user-attachments/assets/25bb2b01-b853-4c26-b5b9-f764145ab0f3)
 
 
 
