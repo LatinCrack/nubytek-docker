@@ -110,14 +110,22 @@ Ideal para contenedores que solo procesen datos, generar informes, o cualquier o
 
 ![image](https://github.com/user-attachments/assets/51b397e0-c78a-4d45-b77c-eeb02ba90e64)
 
-*** host.docker.internal : es un nombre especial que resuelve a la dirección IP de la máquina host desde dentro de un contenedor Docker.
+#### __host.docker.internal__ : es un nombre especial que resuelve a la dirección IP de la máquina host desde dentro de un contenedor Docker.
+
 NOTA.- Esto es una caracteristica de Docker Desktop. En servidores Linux no está esta caracteristica.
 
 ***
 
+#### DOCKER CP: Comando para copiar archivos en contenedores (usar: "docker cp -r" para copia recursiva).
+#### Desde el host al contenedor:
+`docker cp <archivo_local> <contenedor>:<ruta_dentro_del_contenedor>`
+`docker cp index.html my_web_app:/var/www/html/`
 
+#### Desde el contenedor al host:
+`docker cp <contenedor>:<ruta_dentro_del_contenedor> <archivo_local>`
+`docker cp my_container:/var/log/myapp.log /home/logs/`
 
-
+***
 
 
 
